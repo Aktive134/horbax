@@ -3,9 +3,11 @@ import productController from './product.controller';
 
 const productRouter = Router();
 const {
+    getProductsHandler,
     getProductHandler
 } = productController;
 
-productRouter.get('/products', getProductHandler);
+productRouter.route('/products').get(getProductsHandler);
+productRouter.route('/products/:slug').get(getProductHandler);
 
 export default productRouter;

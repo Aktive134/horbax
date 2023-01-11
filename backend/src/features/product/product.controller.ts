@@ -6,9 +6,23 @@ import data from '../../data';
 const Messages = Constant.messages;
 
 class productController {
-    async getProductHandler( req: Request, res: Response, next: NextFunction) {
+    async getProductsHandler(req: Request, res: Response, next: NextFunction) {
         try {
             res.send(data.products);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    async getProductHandler (req: Request, res: Response, next: NextFunction) {
+        try {
+            const { slug } = req.params;
+            const { products } = data;
+            const product = products.find((item) => item.slug === slug);
+            if(product) {
+                return res.send(product);
+            }
+            res.status(404).send({message: 'Product does not exist'});
         } catch (error) {
             console.log(error);
         }
