@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
+/* header {
   background-color: #404040;
   padding:  1rem
 }
@@ -16,10 +16,13 @@ header a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
+} */
+.site-container {
+  min-height: 100vh;
 }
 
 main {
-  padding: 1rem;
+ flex: 1;
 }
 
 .products {
