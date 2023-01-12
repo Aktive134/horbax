@@ -38,7 +38,7 @@ function ProductScreen() {
     const fetchData = async () => {
       dispatch({ type: 'FETCH_REQUEST' })
       try {
-        const result = await axios.get(`/products/${slug}`)
+        const result = await axios.get(`/products/slug/${slug}`)
         dispatch({ type: 'FETCH_SUCCESS', payload: result.data })
       } catch (error) {
         dispatch({ type: 'FETCH_FAIL', payload: getError(error) })
@@ -48,9 +48,17 @@ function ProductScreen() {
   }, [slug])
 
   const { state, dispatch: ctxDispatch } = useContext(Store)
-
-  const addToCartHandler = () => {
-    ctxDispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity: 1 } })
+  const { cart } = state
+  
+  const addToCartHandler = async() => {
+    const existItem = cart.cartItems.find((x) => x._id === product._id)
+    const quantity = existItem ? existItem.quantity + 1 : 1
+    const { data } = await axios.get(`/products/${product._id}`)
+    if (data.countInStock < quantity) {
+      window.alert('Sorry, product is out of stock')
+      return
+    }
+    ctxDispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity } })
   }
 
   return loading ? (

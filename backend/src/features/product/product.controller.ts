@@ -27,6 +27,19 @@ class productController {
             console.log(error);
         }
     }
+    async getProductByIdHandler (req: Request, res: Response, next: NextFunction) {
+        try {
+            const { id } = req.params;
+            const { products } = data;
+            const product = products.find((item) => item._id === id);
+            if(product) {
+                return res.send(product);
+            }
+            res.status(404).send({message: 'Product Not Found'});
+        } catch (error) {
+            console.log(error);
+        }
+    }
 }
 
 export default new productController();
