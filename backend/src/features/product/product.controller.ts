@@ -22,7 +22,7 @@ class productController {
             if(product) {
                 return res.send(product);
             }
-            res.status(404).send({message: 'Product does not exist'});
+            res.status(404).send({message: 'Product Not Found'});
         } catch (error) {
             console.log(error);
         }
