@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useContext, useEffect, useReducer } from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -27,6 +27,7 @@ const reducer = (state, action) => {
 
 function ProductScreen() {
   const params = useParams()
+  const navigate = useNavigate()
   const { slug } = params
   const [{ loading, error, product }, dispatch] = useReducer(reducer, {
     product: [],
@@ -59,6 +60,7 @@ function ProductScreen() {
       return
     }
     ctxDispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity } })
+    navigate("/cart")
   }
 
   return loading ? (
