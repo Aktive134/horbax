@@ -1,0 +1,15 @@
+{
+  message: '::ffff:127.0.0.1 : GET /products 500 :ApplicationError Product does not exist ',
+  level: 'error',
+  timestamp: '2023-01-21T16:05:53.991Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /products 500 :ApplicationError Product does not exist ',
+  level: 'error',
+  timestamp: '2023-01-21T16:05:54.209Z'
+}
+{
+  message: '::1 : POST /sign-up undefined :MongoServerError E11000 duplicate key error collection: Horbax.users index: email_1 dup key: { email: "raymond@gmail.com" } ',
+  level: 'error',
+  timestamp: '2023-01-21T16:12:03.650Z'
+}
