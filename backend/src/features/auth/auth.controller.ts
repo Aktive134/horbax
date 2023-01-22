@@ -7,6 +7,7 @@ import catchAsync from '../../common/error-handler/CatchAsyncError'
 import ApplicationError from '../../common/error-handler/ApplicationError'
 import BadRequestError from '../../common/error-handler/BadRequestError'
 import NotAuthorizeError from '../../common/error-handler/NotAuthorizedError'
+import generateToken from '../../lib/generate-token'
 
 const Messages = Constant.messages
 
@@ -27,6 +28,39 @@ class AuthController {
 
       const user = await newUser.save()
       res.status(201).send({ user })
+    },
+  )
+  loginHandler = catchAsync(
+    async (req: Request, res: Response, next: NextFunction) => {
+      const { email, password } = req.body
+      if (!email || !password) {
+        return next(new BadRequestError(Messages.unsuccessfulLogin))
+      }
+      const user = await User.findOne({ email }).select('+password')
+      const checkPassword = await bcrypt.compare(
+        password,
+        <string>user?.password,
+      )
+      if (!user || !checkPassword) {
+        return next(new NotAuthorizeError('Invalid login credentials'))
+      }
+
+      const { _id, name, isAdmin } = user
+      const userTokenData: Record<string, any> = {
+        _id,
+        name,
+        email,
+        isAdmin
+      }
+      const token = generateToken(userTokenData) as string
+      const userData: Record<string, any> = {
+        _id,
+        name,
+        email,
+        isAdmin,
+        token
+      }
+      res.status(200).send({userData});
     },
   )
 }

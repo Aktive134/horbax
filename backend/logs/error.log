@@ -13,3 +13,13 @@
   level: 'error',
   timestamp: '2023-01-21T16:12:03.650Z'
 }
+{
+  message: '::ffff:127.0.0.1 : GET /products 500 :ApplicationError Product does not exist ',
+  level: 'error',
+  timestamp: '2023-01-22T14:42:11.184Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /products 500 :ApplicationError Product does not exist ',
+  level: 'error',
+  timestamp: '2023-01-22T14:42:11.335Z'
+}

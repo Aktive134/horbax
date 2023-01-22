@@ -7,6 +7,7 @@ const responses = {
     userCreated: "User added successfully",
     loginSuccess: "Login successfully",
     logoutSuccess: "Logout successful",
+    unsuccessfulLogin: 'Please provide email and password',
 }
 
 export default responses
