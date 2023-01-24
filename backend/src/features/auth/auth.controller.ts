@@ -53,13 +53,6 @@ class AuthController {
         isAdmin
       }
       const token = generateToken(userTokenData) as string
-      // const userData: Record<string, any> = {
-      //   _id,
-      //   name,
-      //   email,
-      //   isAdmin,
-      //   token
-      // }
       res.status(200).send({_id,
         name,
         email,
