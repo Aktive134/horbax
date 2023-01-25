@@ -5,7 +5,7 @@ const { signUpHandler, loginHandler } = authController
 
 const authRouter = Router()
 
-authRouter.post('/sign-up', signUpHandler)
+authRouter.post('/signup', signUpHandler)
 authRouter.post('/signin', loginHandler)
 
 export default authRouter

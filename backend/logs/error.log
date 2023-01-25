@@ -38,3 +38,8 @@
   level: 'error',
   timestamp: '2023-01-22T22:03:38.175Z'
 }
+{
+  message: '::ffff:127.0.0.1 : POST /signin undefined :Error data and hash arguments required ',
+  level: 'error',
+  timestamp: '2023-01-25T12:05:49.418Z'
+}

@@ -27,7 +27,8 @@ class AuthController {
       newUser.password = hashPassword
 
       const user = await newUser.save()
-      res.status(201).send({ user })
+      const token = generateToken(user) as string
+      res.status(201).send({ user, name, email, isAdmin, token })
     },
   )
   loginHandler = catchAsync(
@@ -53,7 +54,8 @@ class AuthController {
         isAdmin
       }
       const token = generateToken(userTokenData) as string
-      res.status(200).send({_id,
+      res.status(200).send({
+        _id,
         name,
         email,
         isAdmin,
