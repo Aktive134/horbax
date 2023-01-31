@@ -1,6 +1,8 @@
 import { Router, Request, Response } from "express";
 import productRouter from "./features/product/product.routes";
 import authRouter from "./features/auth/auth.routes";
+import orderRouter from "./features/order/order.routes";
+import validateToken from "./middleware/validate-token";
 
 const router = Router() 
 
@@ -18,5 +20,7 @@ router.get("/", (
 
 router.use(authRouter);
 router.use(productRouter);
+router.use(validateToken);
+router.use(orderRouter)
 
 export default router

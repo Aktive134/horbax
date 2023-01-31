@@ -43,3 +43,38 @@
   level: 'error',
   timestamp: '2023-01-25T12:05:49.418Z'
 }
+{
+  message: '::ffff:127.0.0.1 : GET /products 400 :BadRequestError Provide Authorization header ',
+  level: 'error',
+  timestamp: '2023-01-31T14:51:33.878Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /products 400 :BadRequestError Provide Authorization header ',
+  level: 'error',
+  timestamp: '2023-01-31T14:51:33.932Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /products 400 :BadRequestError Provide Authorization header ',
+  level: 'error',
+  timestamp: '2023-01-31T14:51:40.907Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /products 400 :BadRequestError Provide Authorization header ',
+  level: 'error',
+  timestamp: '2023-01-31T14:51:40.920Z'
+}
+{
+  message: '::ffff:127.0.0.1 : POST /orders undefined :ValidationError Order validation failed: user: Path `user` is required. ',
+  level: 'error',
+  timestamp: '2023-01-31T15:04:23.033Z'
+}
+{
+  message: '::ffff:127.0.0.1 : POST /orders undefined :ValidationError Order validation failed: user: Path `user` is required. ',
+  level: 'error',
+  timestamp: '2023-01-31T15:07:17.958Z'
+}
+{
+  message: '::ffff:127.0.0.1 : POST /orders undefined :ValidationError Order validation failed: user: Path `user` is required. ',
+  level: 'error',
+  timestamp: '2023-01-31T15:10:03.792Z'
+}
