@@ -30,7 +30,7 @@ class productController {
       const { slug } = req.params
       const product = await Product.findOne({ slug })
       if (!product) {
-        return res.status(404).send({ message: 'Product Not Found' })
+        return res.status(404).send({ message: Messages.productExist })
       }
       return res.status(200).send(product)
     //   return res.status(200).json({
@@ -48,7 +48,7 @@ class productController {
       const { id } = req.params
       const product = await Product.findById({ _id: id })
       if (!product) {
-        return res.status(404).send({ message: 'Product Not Found' })
+        return res.status(404).send({ message: Messages.productExist })
       }
       return res.status(200).send(product)
       // return res.json({

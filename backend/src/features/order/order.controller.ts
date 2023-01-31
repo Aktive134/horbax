@@ -24,9 +24,18 @@ class orderController {
         user: payload._id,
       })
       const order = await newOrder.save()
-      res.status(201).send({ message: 'New Order Created', order })
+      res.status(201).send({ message: Messages.orderCreated, order })
     },
   )
+  getOrderByIdHandler = catchAsync( async (req: Request, res: Response, next: NextFunction) => {
+    const { id } = req.params
+    const order = await Order.findById(id);
+    if(order) {
+      res.send(order);
+    } else {
+      res.status(404).send({ message: Messages.orderExist})
+    }
+  })
 }
 
 export default new orderController()
