@@ -78,3 +78,13 @@
   level: 'error',
   timestamp: '2023-01-31T15:10:03.792Z'
 }
+{
+  message: '::ffff:127.0.0.1 : GET /orders/63d98d76cd3be5d793c42546 400 :BadRequestError jwt expired ',
+  level: 'error',
+  timestamp: '2023-02-02T15:52:43.980Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /orders/63d98d76cd3be5d793c42546 400 :BadRequestError jwt expired ',
+  level: 'error',
+  timestamp: '2023-02-02T15:52:44.118Z'
+}
