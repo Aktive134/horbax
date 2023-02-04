@@ -27,6 +27,14 @@ class orderController {
       res.status(201).send({ message: Messages.orderCreated, order })
     },
   )
+  getOrderMineHandler = catchAsync(
+    async (req: Request, res: Response, next: NextFunction) => {
+      const { payload } = res.locals
+      const orders = await Order.find({ user: payload._id })
+      res.send(orders)
+    },
+  )
+
   getOrderByIdHandler = catchAsync(
     async (req: Request, res: Response, next: NextFunction) => {
       const { id } = req.params

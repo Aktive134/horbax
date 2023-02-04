@@ -88,3 +88,23 @@
   level: 'error',
   timestamp: '2023-02-02T15:52:44.118Z'
 }
+{
+  message: '::ffff:127.0.0.1 : GET /orders/mine 400 :BadRequestError jwt expired ',
+  level: 'error',
+  timestamp: '2023-02-04T09:41:57.574Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /orders/mine 400 :BadRequestError jwt expired ',
+  level: 'error',
+  timestamp: '2023-02-04T09:41:57.601Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /orders/mine 400 :BadRequestError jwt expired ',
+  level: 'error',
+  timestamp: '2023-02-04T09:42:09.940Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /orders/mine 400 :BadRequestError jwt expired ',
+  level: 'error',
+  timestamp: '2023-02-04T09:42:09.957Z'
+}
