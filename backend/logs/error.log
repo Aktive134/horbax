@@ -108,3 +108,168 @@
   level: 'error',
   timestamp: '2023-02-04T09:42:09.957Z'
 }
+{
+  message: '::ffff:127.0.0.1 : GET /orders/mine 400 :BadRequestError Something went wrong! ',
+  level: 'error',
+  timestamp: '2023-02-05T14:48:15.764Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /orders/mine 400 :BadRequestError Something went wrong! ',
+  level: 'error',
+  timestamp: '2023-02-05T14:48:15.949Z'
+}
+{
+  message: `::ffff:127.0.0.1 : PUT /users/profile undefined :CastError Cast to ObjectId failed for value "{ user: '63d11d54f5bbf2aa4f8bc4a4' }" (type Object) at path "_id" for model "User" `,
+  level: 'error',
+  timestamp: '2023-02-05T16:01:10.747Z'
+}
+{
+  message: "::ffff:127.0.0.1 : PUT /users/profile undefined :TypeError Cannot read properties of undefined (reading '_id') ",
+  level: 'error',
+  timestamp: '2023-02-05T16:02:45.449Z'
+}
+{
+  message: `::ffff:127.0.0.1 : PUT /users/profile undefined :CastError Cast to ObjectId failed for value "{ user: '63d11d54f5bbf2aa4f8bc4a4' }" (type Object) at path "_id" for model "User" `,
+  level: 'error',
+  timestamp: '2023-02-05T16:03:43.293Z'
+}
+{
+  message: '::ffff:127.0.0.1 : POST /signin undefined :Error data and hash arguments required ',
+  level: 'error',
+  timestamp: '2023-02-05T19:49:14.286Z'
+}
+{
+  message: '::ffff:127.0.0.1 : POST /signin undefined :Error data and hash arguments required ',
+  level: 'error',
+  timestamp: '2023-02-05T19:49:22.692Z'
+}
+{
+  message: '::ffff:127.0.0.1 : POST /signin undefined :Error data and hash arguments required ',
+  level: 'error',
+  timestamp: '2023-02-05T19:53:44.922Z'
+}
+{
+  message: '::ffff:127.0.0.1 : POST /signin undefined :Error data and hash arguments required ',
+  level: 'error',
+  timestamp: '2023-02-05T19:55:34.245Z'
+}
+{
+  message: '::ffff:127.0.0.1 : POST /signin undefined :Error data and hash arguments required ',
+  level: 'error',
+  timestamp: '2023-02-05T19:58:16.736Z'
+}
+{
+  message: '::ffff:127.0.0.1 : POST /signin undefined :Error data and hash arguments required ',
+  level: 'error',
+  timestamp: '2023-02-05T20:09:15.674Z'
+}
+{
+  message: '::ffff:127.0.0.1 : POST /signin undefined :Error data and hash arguments required ',
+  level: 'error',
+  timestamp: '2023-02-05T20:09:23.032Z'
+}
+{
+  message: '::ffff:127.0.0.1 : POST /signin 401 :UnauthorizeRequestError Invalid login credentials ',
+  level: 'error',
+  timestamp: '2023-02-05T20:19:37.103Z'
+}
+{
+  message: '::ffff:127.0.0.1 : POST /signin 401 :UnauthorizeRequestError Invalid login credentials ',
+  level: 'error',
+  timestamp: '2023-02-05T20:20:14.357Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:16:42.076Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:16:42.112Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:19:43.337Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:19:43.364Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:26:32.240Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:27:04.307Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:27:07.261Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:27:10.253Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:27:13.218Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:27:31.059Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:27:31.072Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:27:57.210Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:28:02.076Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:28:54.787Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:28:54.824Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:32:25.134Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:32:25.167Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:38:55.271Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/categories undefined :CastError Cast to ObjectId failed for value "{ _id: 'categories' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-06T15:38:55.339Z'
+}

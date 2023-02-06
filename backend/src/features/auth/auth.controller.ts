@@ -38,20 +38,22 @@ class AuthController {
         return next(new BadRequestError(Messages.unsuccessfulLogin))
       }
       const user = await User.findOne({ email }).select('+password')
+      if (!user) {
+        return next(new NotAuthorizeError('Invalid login credentials'))
+      }
       const checkPassword = await bcrypt.compare(
         password,
         <string>user?.password,
       )
-      if (!user || !checkPassword) {
+      if (!checkPassword) {
         return next(new NotAuthorizeError('Invalid login credentials'))
       }
-
       const { _id, name, isAdmin } = user
       const userTokenData: Record<string, any> = {
         _id,
         name,
         email,
-        isAdmin
+        isAdmin,
       }
       const token = generateToken(userTokenData) as string
       res.status(200).send({
@@ -59,8 +61,8 @@ class AuthController {
         name,
         email,
         isAdmin,
-        token
-      });
+        token,
+      })
     },
   )
 }

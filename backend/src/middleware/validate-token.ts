@@ -36,7 +36,7 @@ const validateToken = (req: Request, res: Response, next: NextFunction) => {
     next();
 
   } catch (error: any) {
-    return next(new BadRequestError(error.message));
+    return next(new BadRequestError("Something went wrong!"));
   }
 };
 
