@@ -1,0 +1,21 @@
+{
+  "name": "horbax-ecommerce",
+  "version": "1.0.0",
+  "description": "## Technologies - React - Node express.js - MongoDb",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm install && npm run compile && cd ../frontend && npm install && npm run build",
+    "serve": "node backend/dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aktive134/horbax.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aktive134/horbax/issues"
+  },
+  "homepage": "https://github.com/Aktive134/horbax#readme"
+}
