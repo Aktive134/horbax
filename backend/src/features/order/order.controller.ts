@@ -49,6 +49,11 @@ class orderController {
     },
   )
 
+  getOrderAdmin = catchAsync(async (req: Request, res: Response, next: NextFunction) => {
+    const orders = await Order.find().populate('user', 'name');
+    res.send(orders);
+  })
+
   updateOrderHandler = catchAsync(
     async (req: Request, res: Response, next: NextFunction) => {
       const { id } = req.params

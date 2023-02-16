@@ -14,7 +14,7 @@ class UserController {
     async (req: Request, res: Response, next: NextFunction) => {
       const { payload } = res.locals
       const { name, email, password } = req.body
-      const user = await User.findById( payload._id )
+      const user = await User.findById(payload._id)
 
       if (user) {
         user.name = name || user.name
@@ -33,6 +33,13 @@ class UserController {
       } else {
         return next(new ApplicationError(Messages.userNotFound))
       }
+    },
+  )
+
+  getUserAdmin = catchAsync(
+    async (req: Request, res: Response, next: NextFunction) => {
+      const users = await User.find({})
+      res.send(users)
     },
   )
 }

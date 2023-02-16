@@ -24,6 +24,8 @@ import {
   SigninScreen,
   CartScreen,
   ProductListScreen,
+  OrderListScreen,
+  UserListScreen,
 } from './screens'
 import { SearchBox, ProtectedRoute, AdminRoute } from './components'
 import Button from 'react-bootstrap/Button'
@@ -196,6 +198,22 @@ function App() {
                 element={
                   <AdminRoute>
                     <DashboardScreen />
+                  </AdminRoute>
+                }
+              ></Route>
+              <Route
+                path="/admin/orders"
+                element={
+                  <AdminRoute>
+                    <OrderListScreen />
+                  </AdminRoute>
+                }
+              ></Route>
+              <Route
+                path="/admin/users"
+                element={
+                  <AdminRoute>
+                    <UserListScreen />
                   </AdminRoute>
                 }
               ></Route>
