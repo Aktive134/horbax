@@ -438,3 +438,63 @@
   level: 'error',
   timestamp: '2023-02-07T12:46:25.571Z'
 }
+{
+  message: '::ffff:127.0.0.1 : GET /orders/summary 400 :BadRequestError Something went wrong! ',
+  level: 'error',
+  timestamp: '2023-02-15T12:13:51.103Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /orders/summary 400 :BadRequestError Something went wrong! ',
+  level: 'error',
+  timestamp: '2023-02-15T12:13:51.163Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/admin?page=1 undefined :CastError Cast to ObjectId failed for value "{ _id: 'admin' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-16T09:12:31.353Z'
+}
+{
+  message: `::ffff:127.0.0.1 : GET /products/admin?page=1 undefined :CastError Cast to ObjectId failed for value "{ _id: 'admin' }" (type Object) at path "_id" for model "Product" `,
+  level: 'error',
+  timestamp: '2023-02-16T09:12:31.379Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /products/categories 400 :BadRequestError Provide Authorization header ',
+  level: 'error',
+  timestamp: '2023-02-16T11:07:10.329Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /products/categories 400 :BadRequestError Provide Authorization header ',
+  level: 'error',
+  timestamp: '2023-02-16T11:07:10.350Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /products 400 :BadRequestError Provide Authorization header ',
+  level: 'error',
+  timestamp: '2023-02-16T11:07:18.249Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /products 400 :BadRequestError Provide Authorization header ',
+  level: 'error',
+  timestamp: '2023-02-16T11:07:18.283Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /products 400 :BadRequestError Provide Authorization header ',
+  level: 'error',
+  timestamp: '2023-02-16T11:07:42.436Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /products/categories 400 :BadRequestError Provide Authorization header ',
+  level: 'error',
+  timestamp: '2023-02-16T11:07:42.456Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /products 400 :BadRequestError Provide Authorization header ',
+  level: 'error',
+  timestamp: '2023-02-16T11:07:42.516Z'
+}
+{
+  message: '::ffff:127.0.0.1 : GET /products/categories 400 :BadRequestError Provide Authorization header ',
+  level: 'error',
+  timestamp: '2023-02-16T11:07:42.536Z'
+}

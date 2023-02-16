@@ -8,8 +8,8 @@ const {
 
 const generateToken = (data: Record<string, any>) => {
   try {
-    const { _id, name, email } = data;
-    const token = jwt.sign({ _id, name, email }, secret, {
+    const { _id, name, email, isAdmin } = data;
+    const token = jwt.sign({ _id, name, email, isAdmin }, secret, {
       issuer: issuer,
       expiresIn: expires,
       algorithm: 'HS512',

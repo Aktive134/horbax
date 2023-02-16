@@ -9,24 +9,26 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import { LinkContainer } from 'react-router-bootstrap'
 import { useContext, useState, useEffect } from 'react'
 import { Store } from './Store'
-import { HomeScreen, ProductScreen } from './screens'
-import CartScreen from './screens/CartScreen'
-import SigninScreen from './screens/SigninScreen'
-import ShippingAddressScreen from './screens/ShippingAddressScreen'
-import SignupScreen from './screens/SignupScreen'
-import PaymentMethodScreen from './screens/PaymentMethodScreen'
-import PlaceOrderScreen from './screens/PlaceOrderScreen'
-import OrderScreen from './screens/OrderScreen'
-import OrderHistoryScreen from './screens/OrderHistoryScreen'
-import ProfileScreen from './screens/ProfileScreen'
+import {
+  HomeScreen,
+  ProductScreen,
+  SearchScreen,
+  DashboardScreen,
+  ProfileScreen,
+  OrderHistoryScreen,
+  OrderScreen,
+  PlaceOrderScreen,
+  PaymentMethodScreen,
+  SignupScreen,
+  ShippingAddressScreen,
+  SigninScreen,
+  CartScreen,
+  ProductListScreen,
+} from './screens'
+import { SearchBox, ProtectedRoute, AdminRoute } from './components'
 import Button from 'react-bootstrap/Button'
 import { getError } from './utils'
 import axios from 'axios'
-import SearchBox from './components/SearchBox'
-import SearchScreen from './screens/SearchScreen'
-import ProtectedRoute from './components/ProtectedRoute'
-import DashboardScreen from './screens/DashboardScreen'
-import AdminRoute from './components/AdminRoute'
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store)
@@ -114,13 +116,13 @@ function App() {
                       <LinkContainer to="/admin/dashboard">
                         <NavDropdown.Item>Dashboard</NavDropdown.Item>
                       </LinkContainer>
-                      <LinkContainer to="/admin/productlist">
+                      <LinkContainer to="/admin/products">
                         <NavDropdown.Item>Products</NavDropdown.Item>
                       </LinkContainer>
-                      <LinkContainer to="/admin/orderlist">
+                      <LinkContainer to="/admin/orders">
                         <NavDropdown.Item>Orders</NavDropdown.Item>
                       </LinkContainer>
-                      <LinkContainer to="/admin/userlist">
+                      <LinkContainer to="/admin/users">
                         <NavDropdown.Item>Users</NavDropdown.Item>
                       </LinkContainer>
                     </NavDropdown>
@@ -194,6 +196,14 @@ function App() {
                 element={
                   <AdminRoute>
                     <DashboardScreen />
+                  </AdminRoute>
+                }
+              ></Route>
+              <Route
+                path="/admin/products"
+                element={
+                  <AdminRoute>
+                    <ProductListScreen />
                   </AdminRoute>
                 }
               ></Route>
